@@ -10,7 +10,7 @@
         "spec": "https://products.wolframalpha.com/api/libraries/javascript/wolfram-alpha-api-1.0.0-rc.1.tgz",
         "type": "remote"
       },
-      "https://github.com/stormrubio3000/API/blob/master/"
+      "https://github.com/stormrubio3000/API/"
     ]
   ],
   "_from": "https://products.wolframalpha.com/api/libraries/javascript/wolfram-alpha-api-1.0.0-rc.1.tgz",
