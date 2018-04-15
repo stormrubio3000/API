@@ -2,7 +2,7 @@
   "name": "wolfapi",
   "version": "1.0.0",
   "description": "\"This app runs wolfram alpha api\"",
-  "main": "working.js",
+  "main": "Source.js",
   "scripts": {
     "test": "echo ‘web: ./node_modules/.bin/forever -m 5 server.js’ >Procfile"
   },
@@ -20,7 +20,7 @@
     "url": "https://github.com/stormrubio3000/API/issues"
   },
     "engines": {
-    "node": "6.12.0"
+    "node": "6.13.1"
   },
-  "homepage": "https://github.com/stormrubio3000/API#readme"
+  "homepage": "https://salty-sierra-17725.herokuapp.com/"
 }
