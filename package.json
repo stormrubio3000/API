@@ -1,0 +1,26 @@
+{
+  "name": "wolfapi",
+  "version": "1.0.0",
+  "description": "\"This app runs wolfram alpha api\"",
+  "main": "working.js",
+  "scripts": {
+    "test": "echo ‘web: ./node_modules/.bin/forever -m 5 server.js’ >Procfile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stormrubio3000/API.git"
+  },
+  "keywords": [
+    "wolfram",
+    "alpha"
+  ],
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/stormrubio3000/API/issues"
+  },
+    "engines": {
+    "node": "6.12.0"
+  },
+  "homepage": "https://github.com/stormrubio3000/API#readme"
+}
