@@ -158,6 +158,9 @@ function formatResults(params) {
           try {
             resolve(JSON.parse(data).queryresult);
           } catch (e) {
+          // reject(
+-           //   new Error('Temporary problem in parsing JSON, please try again.'),
+-           // );
           }
           break;
         case 'image':
