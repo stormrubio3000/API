@@ -22,5 +22,9 @@
     "engines": {
     "node": "6.13.1"
   },
+<<<<<<< HEAD
   "homepage": "wolfapi.herokuapp.com/"
+=======
+  "homepage": "https://wolfapi.herokuapp.com/"
+>>>>>>> 6e0bf4f4e04513c2d4deba18ecd7853f71e52409
 }
