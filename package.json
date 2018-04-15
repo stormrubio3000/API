@@ -22,13 +22,9 @@
     "engines": {
     "node": "6.13.1"
   },
-<<<<<<< HEAD
-  "homepage": "https://salty-sierra-17725.herokuapp.com/"
-=======
   "homepage": "wolfapi.herokuapp.com/",
   "dependencies": {
     "wolfram-alpha-api": "https://products.wolframalpha.com/api/libraries/javascript/wolfram-alpha-api-1.0.0-rc.1.tgz"
   },
   "devDependencies": {}
->>>>>>> 45a83ce772db2a1cc7fa4cfdb2658d9c51d0766f
 }
