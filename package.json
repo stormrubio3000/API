@@ -22,7 +22,7 @@
     "engines": {
     "node": "8.11.1"
   },
-  "homepage": "https://"wolfapi.herokuapp.com/",
+  "homepage": "https://wolfapi.herokuapp.com/",
   "dependencies": {
     "wolfram-alpha-api": "https://products.wolframalpha.com/api/libraries/javascript/wolfram-alpha-api-1.0.0-rc.1.tgz"
   },
