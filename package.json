@@ -2,7 +2,7 @@
   "name": "wolfapi",
   "version": "1.0.0",
   "description": "\"This app runs wolfram alpha api\"",
-  "main": "Source.js",
+  "main": "Server.js",
   "scripts": {
     "test": "echo ‘web: ./node_modules/.bin/forever -m 5 server.js’ >Procfile"
   },
