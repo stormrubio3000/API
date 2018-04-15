@@ -4,7 +4,7 @@
   "description": "\"This app runs wolfram alpha api\"",
   "main": "Server.js",
   "scripts": {
-    "test": "echo ‘web: ./node_modules/.bin/forever -m 5 server.js’ >Procfile"
+    "test": "echo ‘web: ./node_modules/.bin/forever -m 5 Server.js’ >Procfile"
   },
   "repository": {
     "type": "git",
