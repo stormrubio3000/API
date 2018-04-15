@@ -24,7 +24,7 @@
   },
   "homepage": "wolfapi.herokuapp.com/",
   "dependencies": {
-    "wolfram-alpha-api": "https://products.wolframalpha.com/api/libraries/javascript/wolfram-alpha-api-1.0.0-rc.1.tgz"
+    "wolfram-alpha-api": "https://github.com/stormrubio3000/API/tree/master/wolfram-alpha-api"
   },
   "devDependencies": {}
 }
