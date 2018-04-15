@@ -20,7 +20,7 @@
     "url": "https://github.com/stormrubio3000/API/issues"
   },
     "engines": {
-    "node": "6.13.1"
+    "node": "9.11.1"
   },
   "homepage": "wolfapi.herokuapp.com/",
   "dependencies": {
