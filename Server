@@ -30,7 +30,5 @@ http.createServer(function (req, res) {
     }
   }
   
-  
-//https://api.wolframalpha.com/v2/query?input=use+induction+to+show+that+8%5En-3%5En+is+divisible+by+12+for+n%3E0&format=html&output=JSON&appid=AH4R6V-3QUP7RQ6UU
 
 }).listen(8080);
