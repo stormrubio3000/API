@@ -17,14 +17,14 @@ http.createServer(function (req, res) {
       res.end('<html><body><h1>There was an error please refresh.</h1></body></html>');
     }
     else{
-      waApi.getFull(call).then((queryresult) => {
+      waApi.getFull(call).then((queryresult) => {   
       const pods = queryresult.pods;
       const output = pods.map((pod) => {
       const subpodContent = pod.subpods.map(subpod =>
         `alt="${subpod.img.alt}">`
       ).join('\n');
       return `${pod.title}\n${subpodContent}`;
-      }).join('\n');
+      }).join('\n');//JSON.stringify(responseBody)
     res.end(output);
   }).catch(console.error);
     }
