@@ -17,7 +17,7 @@ http.createServer(function (req, res) {
       res.end('<html><body><h1>There was an error please refresh.</h1></body></html>');
     }
     else{
-      waApi.getFull({input:call, includepodid: "Result__Step-by-step solution"}).then((queryresult) => {
+      waApi.getFull({input:call, includepodid: "Result"}).then((queryresult) => {
       const pods = queryresult.pods;
       const output = pods.map((pod) => {
       const subpodContent = pod.subpods.map(subpod =>
