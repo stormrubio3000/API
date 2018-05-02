@@ -17,9 +17,15 @@ http.createServer(function (req, res) {
       res.end('<html><body><h1>There was an error please refresh.</h1></body></html>');
     }
     else{
-      waApi.getFull({input: "prove using induction 1+3+5+...+(2n-1)=n*n",podstate: 'Step-by-step'}).then((queryresult) => {   
-
-     res.end(queryresult.pods[1].subpods[1].plaintext);
+      waApi.getFull(call).then((queryresult) => {   
+      const pods = queryresult.pods;
+      const output = pods.map((pod) => {
+      const subpodContent = pod.subpods.map(subpod =>
+        `alt="${subpod.img.alt}">`
+      ).join('\n');
+      return `${pod.title}\n${subpodContent}`;
+      }).join('\n');
+     res.end(output);
   }).catch(console.error);
     }
   }
