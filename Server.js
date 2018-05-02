@@ -21,7 +21,7 @@ http.createServer(function (req, res) {
       const pods = queryresult.pods;
       const output = pods.map((pod) => {
       const subpodContent = pod.subpods.map(subpod =>
-        `alt="${subpod.img.alt}">`
+        ` <img src="${subpod.img.src}" alt="${subpod.img.alt}">`
       ).join('\n');
       return `${pod.title}\n${subpodContent}`;
       }).join('\n');//JSON.stringify(responseBody)
