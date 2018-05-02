@@ -17,7 +17,7 @@ http.createServer(function (req, res) {
       res.end('<html><body><h1>There was an error please refresh.</h1></body></html>');
     }
     else{
-      waApi.getFull({input: "using induction, prove 9^n-1 is divisible by 4 assuming n>0", includepodid: 'Values', podstate: 'More'}).then((queryresult) => {   
+      waApi.getFull({input: "using induction, prove 9^n-1 is divisible by 4 assuming n>0", includepodid: 'Results'}).then((queryresult) => {   
       const pods = queryresult.pods;
       const output = pods.map((pod) => {
       const subpodContent = pod.subpods.map(subpod =>
