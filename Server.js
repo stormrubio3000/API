@@ -18,7 +18,7 @@ http.createServer(function (req, res) {
     }
     else{
       waApi.getFull({input: "using induction, prove 1+3+5+...+(2n-1)=n^2",includepodid: 'Result', podstate: 'Step-by-step',format: 'plaintext'}).then((queryresult) => {   
-      const output = queryresult.pods[0].subpods[0].plaintext + queryresult.pods[1].subpods[0].plaintext
+      const output = queryresult.pods[0].subpods[0].plaintext + queryresult.pods[0].subpods[1].plaintext
      res.end(queryresult.pods[0].subpods[0].plaintext);
   }).catch(console.error);
     }
