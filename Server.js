@@ -17,7 +17,7 @@ http.createServer(function (req, res) {
       res.end('<html><body><h1>There was an error please refresh.</h1></body></html>');
     }
     else{
-      waApi.getFull({input: "using induction, prove 1+3+5+...+(2n-1)=n*n", includepodid: 'Result'}).then((queryresult) => {   
+      waApi.getFull({input: "using induction, prove 1+3+5+...+(2n-1)=n*n", includepodid: 'Result', podstate: 'Step-by-step'}).then((queryresult) => {   
       const pods = queryresult.pods;
       const output = pods.map((pod) => {
       const subpodContent = pod.subpods.map(subpod =>
