@@ -17,15 +17,9 @@ http.createServer(function (req, res) {
       res.end('<html><body><h1>There was an error please refresh.</h1></body></html>');
     }
     else{
-      waApi.getFull({input: "using induction, prove 1+3+5+...+(2n-1)=n^2", podstate: 'Step-by-step'}).then((queryresult) => {   
-      const pods = queryresult.pods;
-      const output = pods.map((pod) => {
-      const subpodContent = pod.subpods.map(subpod =>
-        ` <img src="${subpod.img.src}" alt="${subpod.img.alt}">`
-      ).join('\n');
-      return `${pod.title}\n${subpodContent}`;
-      }).join('\n');//JSON.stringify(responseBody)
-    res.end(output);
+      waApi.getFull({input: "using induction, prove 1+3+5+...+(2n-1)=n^2",includepodid: 'Result', podstate: 'Step-by-step',format: 'plaintext'}).then((queryresult) => {   
+      
+     res.end(queryresult.pods[0].subpods[0].plaintext);
   }).catch(console.error);
     }
   }
