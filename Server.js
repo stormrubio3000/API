@@ -19,7 +19,7 @@ http.createServer(function (req, res) {
     else{
       waApi.getFull({input: "prove using induction 1+3+5+...+(2n-1)=n*n",podstate: 'Step-by-step'}).then((queryresult) => {   
 
-     res.end(queryresult.pods[1].subpods[0].plaintext);
+     res.end(queryresult.pods[1].subpods[1].plaintext);
   }).catch(console.error);
     }
   }
